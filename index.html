@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengantar Teori Graf</title>
+    <!-- Ini adalah CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Ini adalah javascript -->
+    <script src="tubes.js"></script>
+</head>
+
+<body>
+
+    <section class="left">
+        <div class="container">
+            <img src="./aset/mathematics-bachelor-s-degree-master-s-degree-lecturer-departemen-matematika-its-mathematics-190430af2fcd68fcc1f9d82930d28a03.png" alt="">
+            <!-- <h3>Departemen Matematika ITS</h3>
+            <h4>Kelompok 6</h4> -->
+        </div>
+    </section>
+
+    <section class="right">
+        <div class="container">
+            <div class="top">
+                <div class="orang">
+                    <h4>Dosen Pengampu</h4>
+                    <div class="dosen">
+                        <div class="pic">
+                            <img src="./aset/Pak Dar.png" alt="">
+                        </div>
+                        <div class="nama">
+                            <p class="atas">Dr. Darmaji, S.Si., MT</p>
+                            <p class="bawah">19691015 199412 1 001</p>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Mahasiswa</h4>
+                    <div class="mhs">
+                        <div class="pic">
+                            <img src="./aset/Bayu.png" alt="">
+                        </div>
+                        <div class="nama">
+                            <p class="atas">Bayu Ramadhan Yunarko</p>
+                            <p class="bawah">06111640000018</p>
+                        </div>
+                    </div>
+                    <div class="mhs">
+                        <div class="pic">
+                            <img src="./aset/Wildan.png" alt="">
+                        </div>
+                        <div class="nama">
+                            <p class="atas">Wildan Zakky Al Muntaha</p>
+                            <p class="bawah">06111640000077</p>
+                        </div>
+                    </div>
+                    <div class="mhs">
+                        <div class="pic">
+                            <img src="./aset/Yovia.png" alt="">
+                        </div>
+                        <div class="nama">
+                            <p class="atas">Yovia Galuh Salsabilla</p>
+                            <p class="bawah">06111640000085</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="judul">
+                    <div class="teks">
+                        <h4>Tugas Besar</h4>
+                        <h4>Pengantar Teori Graf</h4>
+                        <br><br><br>
+                        <h3>Aplikasi</h4>
+                        <h1>Huffman Coding</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="middle">
+                <h3>Kode Huffman</h3>
+                <p>Salah satu algoritma yang biasa digunakan dalam kompresi data adalah algoritma Pengkodean
+                    Huffman.Algoritma ini dikembangkan oleh David A. Huffman pada tahun 1952 yang merupakan salah satu
+                    mahasiswa MIT. Pada Algoritma pengkodean Huffman simbol yang mempunyai probabilitas paling besar
+                    diberi kode paling pendek (jumlah bit kode sedikit) dan simbol dengan probabilitas paling kecil akan
+                    memperoleh kode paling panjang (jumlah bit kode banyak). Kode tersebut diperoleh dengan cara
+                    memyusun sebuah pohon Huffman untuk masing-masing simbol berdasarkan nilai probabilitasnya.
+                </p>
+                <p>Algoritma pohon Huffman dimulai dengan membuat dua buah node dengan frekuensi paling kecil
+                    berdasarkan daftar simbol dan probabilitas. Kemudian buatlah node parent dari node tersebut dengan
+                    bobot parent merupakan jumlah dari probabilitas kedua node anak tersebut. Selanjutnya masukkan node
+                    parent tersebut beserta bobotnya ke dalam daftar, dan kemudian kedua node anak beserta
+                    probabilitasnya dihapus dari daftar. Salah satu node anak dijadikan jalur (dilihat dari node parent)
+                    untuk pengkodean 0 sedangkan lainnya digunakan untuk jalur pengkodean 1.</p>
+            </div>
+
+            <div class="contoh">
+                <h3>Penyelesaian Kode Huffman Manual </h3>
+                <p>1. Menghitung frekuensi kemunculan tiap huruf (Contoh "MALAYALAM").</p>
+                <img src="./aset/1.PNG" alt=""><br>
+                <p>2. Membentuk pohon Huffman.</p>
+                <img src="./aset/2.PNG" alt=""><br>
+                <img src="./aset/3.PNG" alt=""><br>
+                <img src="./aset/4.PNG" alt=""><br>
+                <p>3. Bentuk pohon huffman.</p>
+                <img src="./aset/5.PNG" alt=""><br>
+                <p>4. Kode Huffman yang didapat dari kata "MALAYALAM"</p>
+                <img src="./aset/6.PNG" alt=""><br>
+            </div>
+
+            <div class="bottom">
+                <div class="program">
+                    <div class="judul-program">
+                        <h3>Program Huffman Coding</h3>
+                    </div>
+                    <label for="">Input Kata/Frasa</label><br>
+                    <input type="text" id="txtInput"><br>
+                    <input type="button" value="Proses" id="Proses" onclick="InputOutput()">
+                    <input type="button" value="Refresh" onClick="window.location.reload()"><br>
+                    <label for="">Kode Huffman</label><br>
+                    <textarea name="" id="txtKode" cols="55" rows="2" disabled></textarea><br>
+                    <label for="">Encoding</label><br>
+                    <textarea name="" id="txtEncode" cols="55" rows="2" disabled></textarea><br>
+                    <label for="">Decoding</label><br>
+                    <textarea name="" id="txtDecode" cols="55" rows="2" disabled></textarea><br>
+                </div>
+                <div class="gambar">
+                    <img src="./aset/_Pngtree_modern_flat_design_concept_of_5332895-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

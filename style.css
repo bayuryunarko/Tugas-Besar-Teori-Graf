@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color:  #F8F8F8;
+    margin: 25px 50px;
+    display: flex;
+    justify-content: center;
+}
+.left{
+    width: 15%;
+    background: #587BF7;
+    border-radius: 30px;
+    margin-right: 20px;
+    text-align: center;
+    color: #F3F6F9;
+}
+.left h3{
+    margin-bottom: 5px;
+    font-size: 17px;
+    
+    /* font-weight: lighter; */
+}
+.left img{
+    width: 100px;
+    margin-top: 20px;
+}
+.right{
+    width: 80%;
+    /* background-color: blueviolet; */
+}
+
+/* Untuk Bagian Top */
+.right .top{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: auto;
+    margin-bottom: 20px;
+}
+.right .orang{
+    background-color: #CDD9F9;
+    width: 40%;
+    padding: 30px 40px;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+.right .orang h4{
+    color: #233A5C;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.right .top img{
+    width: 60px;
+}
+.right .top .orang .pic{
+    margin-right: 15px;
+}
+.right .top .orang .atas{
+    color: #233A5C;
+    font-weight: bolder;
+}
+.right .top .orang .bawah{
+    color: #7486A0;
+    font-size: 13px;
+}
+.right .dosen, .right .mhs{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.right .judul{
+    background-color: #D0DBF8;
+    width: 60%;
+    border-radius: 30px;
+    color: #233A5C;
+}
+.right .judul .teks{
+    margin: 100px auto 125px 40px;
+}
+.right .judul h4{
+    font-size: 20px;
+    font-weight: normal;
+}
+.right .judul h3{
+    font-size: 20px;
+}
+.right .judul h1{
+    font-size: 55px;
+}
+
+/* Akhir Bagian Top */
+
+
+/* Untuk Bagian Middle */
+.right .middle{
+    background-color: #E2E9FC;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    height: auto;
+    padding: 40px;
+}
+.right .middle h3{
+    color: #233A5C;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.right .middle p{
+    text-align: justify;
+    margin-bottom: 10px;
+    color: #355b8f;
+    line-height: 22px;
+}
+/* Akhir bagian Middle */
+
+
+/* Untuk bagian Contoh */
+.right .contoh{
+    background-color: #b9cbfc;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    height: auto;
+    padding: 40px;
+}
+.right .contoh h3{
+    color: #233A5C;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.right .contoh p{
+    color: #233A5C;
+    margin-bottom: 10px;
+}
+.right .contoh img{
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 20px;
+}
+/* Akhir bagian Contoh */
+
+
+
+/* Untuk Bagian Bottom */
+.right .bottom{
+    background-color: #D0DBF8;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 0;
+}
+.right .bottom .program{
+    /* background-color: darkmagenta; */
+    width: 50%;
+    padding: 40px;
+    color: #7486A0;
+}
+.right .bottom .program h3{
+    color: #233A5C;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.right .bottom .program label{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.right .bottom .program input[type=text]{
+    margin-bottom: 10px;
+    width: 400px;
+    height: 40px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    background-color: white;
+    font-weight: 400;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+.right .bottom .program input[type=button]{
+    margin-bottom: 25px;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #587BF6;
+    background-color: #587BF6;
+    color: white;
+    font-weight: 400;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+.right .bottom .program input[type=button]:hover{
+    background: #486be9;
+    color: white ;
+}
+.right .bottom .program textarea{
+    resize: none;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    background-color: white;
+    font-weight: 400;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+.right .bottom .gambar{
+    width: 50%;
+}
+.right .bottom .gambar img{
+    width: 80%;
+    margin: 50px;
+}
+/* Akhir bagian Bottom */
